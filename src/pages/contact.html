@@ -1,0 +1,63 @@
+---
+title: お問い合わせ｜豊田ほっとかん
+desc: 豊田ほっとかんへのお問い合わせ。お電話・フォームで承ります。
+body: page page-contact
+---
+<!-- ===== ページ見出し（WP：the_title() とアイキャッチ画像） ===== -->
+<section class="page-hero">
+  <div class="page-hero-text">
+    <h1>お問い合わせ</h1>
+  </div>
+  <div class="page-hero-photo"><img src="assets/img/hero_04.jpg" alt=""></div>
+</section>
+<nav class="breadcrumb" aria-label="パンくずリスト"><ol class="container"><li><a href="index.html">ホーム</a></li><li aria-current="page">お問い合わせ</li></ol></nav>
+
+<div class="container content">
+  <section class="content-section">
+    <h2 class="h2-line">お電話でのお問い合わせ</h2>
+    <p>お急ぎの方、ご相談内容が決まっていない方は、お電話でお気軽にお問い合わせください。</p>
+    <ul class="tel-list" style="max-width:720px">
+      <li><span class="dept"><strong>代表・有料老人ホーム</strong><br><small>受付 9:00〜17:00</small></span><a href="tel:0565363000">0565-36-3000</a></li>
+      <li><span class="dept"><strong>デイサービスセンター</strong><br><small>月〜土曜日</small></span><a href="tel:0565363008">0565-36-3008</a></li>
+      <li><span class="dept"><strong>地域包括支援センター・居宅介護支援事業所</strong><br><small>月〜土曜日 8:30〜17:30</small></span><a href="tel:0565363006">0565-36-3006</a></li>
+    </ul>
+  </section>
+
+  <section class="content-section">
+    <h2 class="h2-line">フォームでのお問い合わせ</h2>
+    <p>内容を確認のうえ、担当者よりご連絡いたします。<span style="color:var(--c-alert);font-weight:700">必須</span>の項目は必ずご入力ください。</p>
+    <!-- WP化時：Contact Form 7 / MW WP Form 等に置き換え。デモでは送信されません -->
+    <form class="form" onsubmit="alert('デモのため送信されません');return false;">
+      <div class="form-row">
+        <label for="f-type">お問い合わせ内容 <span class="req">必須</span></label>
+        <select id="f-type" required>
+          <option value="">選択してください</option>
+          <option>有料老人ホームの見学・資料請求</option>
+          <option>デイサービスについて</option>
+          <option>介護のご相談</option>
+          <option>温浴施設じゅわじゅわについて</option>
+          <option>西部コミュニティセンターについて</option>
+          <option>求人について</option>
+          <option>その他</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="f-name">お名前 <span class="req">必須</span></label>
+        <input id="f-name" type="text" autocomplete="name" required placeholder="例）豊田 花子">
+      </div>
+      <div class="form-row">
+        <label for="f-tel">お電話番号 <span class="req">必須</span></label>
+        <input id="f-tel" type="tel" autocomplete="tel" required placeholder="例）0565-00-0000">
+      </div>
+      <div class="form-row">
+        <label for="f-mail">メールアドレス</label>
+        <input id="f-mail" type="email" autocomplete="email" placeholder="例）example@example.jp">
+      </div>
+      <div class="form-row">
+        <label for="f-body">お問い合わせ内容の詳細</label>
+        <textarea id="f-body" rows="6"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit" style="min-width:240px">確認画面へ進む</button>
+    </form>
+  </section>
+</div>

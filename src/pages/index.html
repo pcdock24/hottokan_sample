@@ -1,0 +1,277 @@
+---
+title: 豊田ほっとかん｜介護付有料老人ホーム・温浴施設・西部コミュニティセンターの複合施設
+desc: 豊田市と民間事業者が協働して設立した第三セクター「株式会社豊田ほっとかん」の公式サイト。介護付有料老人ホーム、デイサービス、温浴施設じゅわじゅわ、西部コミュニティセンターなどの複合施設です。
+body: home
+---
+<!-- ===== 第一画面（WP：front-page.php。写真と説明文はカスタマイザーまたは ACF で差し替え） ===== -->
+<section class="cover" aria-labelledby="cover-title">
+  <h1 class="cover-title" id="cover-title">放っておけない、<br>「ほっとする」<span class="upright">HOT</span>な場所。</h1>
+  <div class="cover-text">
+    <p class="cover-place">豊田市 本新町の多目的複合施設</p>
+    <p>介護付有料老人ホームから、温浴施設、コミュニティセンター、保育室、内科・薬局まで。小さなお子さまから高齢の方まで、地域のみなさまが集う場所です。</p>
+  </div>
+  <div class="cover-photos">
+    <figure class="photo-main"><img src="assets/img/hero_15.jpg" alt="" fetchpriority="high"><figcaption>池と緑に囲まれた豊田ほっとかん 本館・東館</figcaption></figure>
+    <figure class="photo-bath"><img src="assets/img/hero_09.jpg" alt=""><figcaption>豊田市温浴施設じゅわじゅわ 露天ジャグジー</figcaption></figure>
+    <figure class="photo-walk"><img src="assets/img/hero_08.jpg" alt=""><figcaption>施設の周りには池沿いの散策路が広がります</figcaption></figure>
+  </div>
+
+  <!-- ===== 営業・空き状況（WP：ACF オプションページ。職員が管理画面から更新） ===== -->
+  <aside class="status" aria-labelledby="status-title">
+    <h2 class="status-title" id="status-title">営業・空き状況 <small><time datetime="2026-09-25">2026年9月25日 現在</time></small></h2>
+    <div class="status-item">
+      <h3>{{icon:clock}}本日の営業について</h3>
+      <p>本日の営業状況と、台風・災害などの緊急時のお知らせはこちらでご確認ください。</p>
+      <a class="more" href="#">営業案内・緊急時のお知らせ（PDF）</a>
+    </div>
+    <div class="status-item">
+      <h3>{{icon:home}}有料老人ホームの空き状況</h3>
+      <ul class="vacancy">
+        <li>本館 <span class="badge badge-full">満室</span></li>
+        <li>東館 <span class="badge badge-full">満室</span></li>
+      </ul>
+      <p>満室の場合も待機登録を承っております。</p>
+      <a class="more" href="nursing-home.html#flow">入居までの流れを見る</a>
+    </div>
+    <div class="status-item">
+      <h3>{{icon:sun}}デイサービスの空き状況</h3>
+      <ul class="vacancy">
+        <li>一般デイ <span class="badge badge-few">残りわずか</span></li>
+        <li>リハビリデイ <span class="badge badge-open">空きあり</span></li>
+      </ul>
+      <a class="more" href="#">曜日ごとの空き状況（PDF）</a>
+    </div>
+  </aside>
+</section>
+
+<!-- ===== お知らせ（WP：投稿／カテゴリー。最新6件をループ出力。重要なお知らせは「重要」カテゴリーの最新1件を上に出す） ===== -->
+<section class="home-news" id="news" aria-labelledby="news-title">
+  <div class="container news-wrap">
+    <div class="news-side">
+      <h2 id="news-title">お知らせ</h2>
+      <div class="news-filter" role="group" aria-label="カテゴリで絞り込み">
+        <button type="button" data-filter="all" aria-pressed="true">すべて</button>
+        <button type="button" data-filter="important" aria-pressed="false">重要なお知らせ</button>
+        <button type="button" data-filter="care" aria-pressed="false">介護・老人ホーム</button>
+        <button type="button" data-filter="bath" aria-pressed="false">じゅわじゅわ</button>
+        <button type="button" data-filter="community" aria-pressed="false">コミセン・保育室</button>
+      </div>
+    </div>
+    <div class="news-main">
+      <div class="alert-box" role="note">
+        {{icon:alert}}
+        <div>
+          <h3>弊社社長を騙った不審メールにご注意ください</h3>
+          <p>弊社社長名を騙る「なりすましメール」が確認されています。添付ファイルの参照・URLのクリック・返信はせず、削除をお願いいたします。<a href="news.html">詳しくはこちら</a></p>
+        </div>
+      </div>
+      <ul class="news-list">
+        <li data-cat="important"><a href="news.html"><time datetime="2026-09-01">2026.09.01</time><span class="cat cat-important">重要</span><span class="ttl">弊社社長を騙った不審メールに関する注意喚起のお知らせ</span></a></li>
+        <li data-cat="bath"><a href="juwajuwa.html"><time datetime="2026-08-20">2026.08.20</time><span class="cat cat-bath">じゅわじゅわ</span><span class="ttl">10月の「じゅわじゅわ健康講座」開催日のお知らせ</span></a></li>
+        <li data-cat="care"><a href="news.html"><time datetime="2026-08-05">2026.08.05</time><span class="cat cat-care">介護</span><span class="ttl">デイサービス レクリエーション予定表を更新しました</span></a></li>
+        <li data-cat="community"><a href="news.html"><time datetime="2026-07-15">2026.07.15</time><span class="cat cat-community">コミセン</span><span class="ttl">貸室のご予約は「豊田市公共施設予約システム」をご利用ください</span></a></li>
+        <li data-cat="community"><a href="news.html"><time datetime="2026-06-30">2026.06.30</time><span class="cat cat-community">保育室</span><span class="ttl">どんぐり保育室のInstagramを始めました</span></a></li>
+        <li data-cat="care"><a href="news.html"><time datetime="2026-06-10">2026.06.10</time><span class="cat cat-care">介護</span><span class="ttl">認知症カフェ「そよ風カフェ」開催のご案内</span></a></li>
+      </ul>
+      <a class="btn btn-primary" href="news.html">お知らせ一覧へ</a>
+    </div>
+  </div>
+</section>
+
+<!-- 本文トラック（施設・ほっとかんについて・じゅわじゅわ・求人）と、右の欄（目的・お知らせ・関連リンク）の2トラック -->
+<div class="container home-columns">
+  <div class="home-main">
+
+    <!-- ===== 施設・サービス（WP：カスタム投稿タイプ facility、建物タクソノミー：本館／東館） ===== -->
+    <section class="home-section home-facilities" id="facilities" aria-labelledby="fac-title">
+      <div class="section-head">
+        <h2 id="fac-title">施設・サービスのご案内</h2>
+        <p>同じ敷地内の本館・東館に、さまざまな施設がそろっています。</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="建物で切り替え">
+        <button type="button" role="tab" id="tab-main" aria-selected="true" aria-controls="panel-main">本館</button>
+        <button type="button" role="tab" id="tab-east" aria-selected="false" aria-controls="panel-east" tabindex="-1">東館</button>
+      </div>
+      <div role="tabpanel" id="panel-main" aria-labelledby="tab-main">
+        <ul class="facility-index">
+          <!-- WP化時：facility のループ。tag のクラスは分野（care／bath／community／medical／other） -->
+          <li><a class="facility-item" href="nursing-home.html">
+            <div class="body"><span class="tag tag-care">介護・住まい</span><h3 class="name">介護付有料老人ホーム</h3><p class="desc">南向きの居室から池を望む、70戸の住まい。自立の方から要介護の方まで。</p></div>
+            <span class="thumb"><img src="assets/img/img_1.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="juwajuwa.html">
+            <div class="body"><span class="tag tag-bath">健康づくり</span><h3 class="name">温浴施設じゅわじゅわ</h3><p class="desc">20種類の温浴メニューと、地下1,300mから湧く「割目池温泉ほっとかんの湯」。</p></div>
+            <span class="thumb"><img src="assets/img/img_2.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="care-consultation.html#houkatsu">
+            <div class="body"><span class="tag tag-care">介護のご相談</span><h3 class="name">地域包括支援センター</h3><p class="desc">豊田市から委託を受けた、逢妻地区の高齢者の公的な相談窓口です。相談は無料です。</p></div>
+            <span class="thumb"><img src="assets/img/img_3.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="community-center.html">
+            <div class="body"><span class="tag tag-community">地域交流</span><h3 class="name">西部コミュニティセンター</h3><p class="desc">図書室、多目的ホール、会議室、調理室、和室など。目的に合わせてご利用いただけます。</p></div>
+            <span class="thumb"><img src="assets/img/img_4.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="clinic.html#naika">
+            <div class="body"><span class="tag tag-medical">医療</span><h3 class="name">ふじしま内科</h3><p class="desc">本館2階に併設されている内科クリニックです。</p></div>
+            <span class="thumb"><img src="assets/img/img_5.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="clinic.html#drug">
+            <div class="body"><span class="tag tag-medical">医療</span><h3 class="name">あおい調剤薬局</h3><p class="desc">本館1階に併設されている調剤薬局です。</p></div>
+            <span class="thumb"><img src="assets/img/img_6.jpg" alt="" loading="lazy"></span>
+          </a></li>
+        </ul>
+      </div>
+      <div role="tabpanel" id="panel-east" aria-labelledby="tab-east" hidden>
+        <ul class="facility-index">
+          <li><a class="facility-item" href="nursing-home.html#east">
+            <div class="body"><span class="tag tag-care">介護・住まい</span><h3 class="name">介護付有料老人ホーム 東館</h3><p class="desc">2018年10月開設。介護が必要な方のための18室の住まいです。</p></div>
+            <span class="thumb"><img src="assets/img/img_7.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="day-service.html#general">
+            <div class="body"><span class="tag tag-care">デイサービス</span><h3 class="name">一般デイサービス</h3><p class="desc">温泉への入浴、レクリエーション、音楽を使った認知症予防など。月〜土曜（祝日も実施）。</p></div>
+            <span class="thumb"><img src="assets/img/img_8.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="day-service.html#rehab">
+            <div class="body"><span class="tag tag-care">デイサービス</span><h3 class="name">リハビリデイサービス</h3><p class="desc">最新の機器と理学療法士・作業療法士による、機能訓練特化型のデイサービスです。</p></div>
+            <span class="thumb"><img src="assets/img/img_9.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="care-consultation.html#kyotaku">
+            <div class="body"><span class="tag tag-care">介護のご相談</span><h3 class="name">居宅介護支援事業所</h3><p class="desc">ケアマネジャーが、介護認定を受けた方のケアプランを作成します。</p></div>
+            <span class="thumb"><img src="assets/img/img_11.jpg" alt="" loading="lazy"></span>
+          </a></li>
+          <li><a class="facility-item" href="nursery.html">
+            <div class="body"><span class="tag tag-community">子育て</span><h3 class="name">どんぐり保育室</h3><p class="desc">地域のみなさまもご利用いただける、企業主導型の保育所です。</p></div>
+            <span class="thumb"><img src="assets/img/img_12.jpg" alt="" loading="lazy"></span>
+          </a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ほっとかんについて ===== -->
+    <section class="home-section home-about" aria-labelledby="about-title">
+      <figure class="about-img">
+        <img src="assets/img/hero_01.jpg" alt="豊田ほっとかん本館の外観" loading="lazy">
+        <figcaption class="stamp">豊田市と民間事業者の協働による<strong>第三セクター</strong></figcaption>
+      </figure>
+      <div class="about-body">
+        <h2 id="about-title">地域とともに歩む、<br>多目的複合施設です。</h2>
+        <p class="lead">安心・健康・生きがい・交流。ひとつの場所に、暮らしを支える機能が集まっています。</p>
+        <p>株式会社豊田ほっとかんは、1995年に豊田市と民間事業者が協働して設立した第三セクターです。1997年の開設以来、高齢の方が生きがいを持って気持ちよく暮らせる環境と、誰もが安心して生活できる地域社会づくりに取り組んでいます。</p>
+        <ul class="stats">
+          <li><span class="label">開設</span><span class="num">1997年</span></li>
+          <li><span class="label">老人ホーム居室</span><span class="num">88室<small>（本館70・東館18）</small></span></li>
+          <li><span class="label">温浴メニュー</span><span class="num">20種</span></li>
+          <li><span class="label">源泉の深さ</span><span class="num">1,300m</span></li>
+        </ul>
+        <a class="btn btn-outline" href="about.html">ほっとかんについて詳しく</a>
+      </div>
+    </section>
+
+    <!-- ===== じゅわじゅわ（WP：料金は ACF オプションページから出力） ===== -->
+    <section class="home-section bath" aria-labelledby="bath-title">
+      <div class="bath-photos">
+        <img class="main" src="assets/img/img_2_long.jpg" alt="じゅわじゅわ バーデゾーン" loading="lazy">
+        <img src="assets/img/hero_10.jpg" alt="温浴メニュー" loading="lazy">
+        <img src="assets/img/hero_11.jpg" alt="割目池温泉ほっとかんの湯" loading="lazy">
+      </div>
+      <div class="bath-body">
+        <h2 id="bath-title">豊田市温浴施設<br>じゅわじゅわ</h2>
+        <p>水着で気軽に楽しめる温浴フィットネス「バーデゾーン」と、地下1,300mから湧き出す「割目池温泉ほっとかんの湯」。一般の方もご利用いただけます。</p>
+        <table class="info-table">
+          <tr><th scope="row">営業時間</th><td>午前10:00〜午後9:00</td></tr>
+          <tr><th scope="row">定休日</th><td>毎月第1月曜日（祝日の場合は翌週）</td></tr>
+          <tr><th scope="row">プール＋温泉</th><td>大人 <span class="price">700円</span>／60歳以上 <span class="price">500円</span>／子ども <span class="price">400円</span></td></tr>
+          <tr><th scope="row">温泉のみ</th><td>中学生以上 <span class="price">500円</span>／子ども <span class="price">300円</span></td></tr>
+        </table>
+        <a class="btn btn-light" href="juwajuwa.html">料金・ご利用案内を見る</a>
+      </div>
+    </section>
+
+    <!-- ===== 求人 ===== -->
+    <section class="home-section recruit" aria-labelledby="recruit-title">
+      <img src="assets/img/hero_04.jpg" alt="" loading="lazy">
+      <div class="recruit-inner">
+        <h2 id="recruit-title">地域の「ほっと」を、<br>いっしょにつくりませんか。</h2>
+        <p>デイサービス、リハビリデイ、ケアマネジャー、温浴施設スタッフなど、随時募集しています。</p>
+        <a class="btn btn-primary" href="recruit.html">求人情報を見る</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="home-aside">
+    <!-- ===== 目的からさがす ===== -->
+    <section class="home-section home-purpose" aria-labelledby="purpose-title">
+      <div class="section-head">
+        <h2 id="purpose-title">目的からさがす</h2>
+        <p>ご利用になりたいサービスをお選びください。</p>
+      </div>
+      <ul class="purpose-grid">
+        <li><a class="purpose-card" href="nursing-home.html">
+          <span class="ico ico-care">{{icon:home}}</span>
+          <span class="txt"><strong>ご入居を検討したい</strong><span>介護付有料老人ホーム</span></span>
+        </a></li>
+        <li><a class="purpose-card" href="day-service.html">
+          <span class="ico ico-care">{{icon:sun}}</span>
+          <span class="txt"><strong>デイサービスを利用したい</strong><span>一般デイ・リハビリデイ</span></span>
+        </a></li>
+        <li><a class="purpose-card" href="care-consultation.html">
+          <span class="ico ico-care">{{icon:chat}}</span>
+          <span class="txt"><strong>介護について相談したい</strong><span>地域包括支援センター・居宅介護</span></span>
+        </a></li>
+        <li><a class="purpose-card" href="juwajuwa.html">
+          <span class="ico ico-bath">{{icon:wave}}</span>
+          <span class="txt"><strong>温泉・プールで健康づくり</strong><span>温浴施設じゅわじゅわ</span></span>
+        </a></li>
+        <li><a class="purpose-card" href="community-center.html">
+          <span class="ico ico-community">{{icon:book}}</span>
+          <span class="txt"><strong>図書室・貸室を使いたい</strong><span>西部コミュニティセンター</span></span>
+        </a></li>
+        <li><a class="purpose-card" href="recruit.html">
+          <span class="ico ico-other">{{icon:users}}</span>
+          <span class="txt"><strong>ほっとかんで働きたい</strong><span>求人情報</span></span>
+        </a></li>
+      </ul>
+    </section>
+
+    <!-- ===== 関連リンク ===== -->
+    <section class="home-section home-links" aria-labelledby="links-title">
+      <div class="section-head">
+        <h2 id="links-title">各種サービス・関連リンク</h2>
+      </div>
+      <ul class="link-grid">
+        <li><a class="link-card" href="https://toyotacity-yoyaku-nexres-portal.azurewebsites.net/" target="_blank" rel="noopener"><strong>豊田市公共施設予約システム{{icon:external}}</strong><span>西部コミュニティセンターの貸室はこちらからご予約いただけます。（新しいタブで開く）</span></a></li>
+        <li><a class="link-card" href="https://www.kaigokensaku.mhlw.go.jp/23/index.php?action_kouhyou_detail_006_kani=true&amp;JigyosyoCd=2373000427-00&amp;ServiceCd=150&amp;Type=search" target="_blank" rel="noopener"><strong>介護サービス情報公表システム{{icon:external}}</strong><span>有料老人ホーム・デイサービス・リハビリデイの公表情報（厚生労働省）（新しいタブで開く）</span></a></li>
+        <li><a class="link-card" href="https://kaigo.homes.co.jp/facility/detail/f=34341/" target="_blank" rel="noopener"><strong>LIFULL介護 紹介ページ{{icon:external}}</strong><span>ほっとかんの有料老人ホームの紹介ページです。（新しいタブで開く）</span></a></li>
+        <li><a class="link-card" href="faq.html"><strong>よくあるご質問</strong><span>西部コミュニティセンター・温浴施設じゅわじゅわについてのよくあるご質問。</span></a></li>
+        <li><a class="link-card" href="https://www.facebook.com/toyotahotkan/" target="_blank" rel="noopener"><strong>ほっとかん Facebook{{icon:external}}</strong><span>日々の様子や季節のイベントを発信しています。（新しいタブで開く）</span></a></li>
+        <li><a class="link-card" href="https://www.instagram.com/hotkan_donnguri/" target="_blank" rel="noopener"><strong>どんぐり保育室 Instagram{{icon:external}}</strong><span>保育室の子どもたちの様子をご覧いただけます。（新しいタブで開く）</span></a></li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<!-- ===== アクセス ===== -->
+<section class="access" id="access" aria-labelledby="access-title">
+  <div class="container access-grid">
+    <div class="access-info">
+      <div class="section-head">
+        <h2 id="access-title">アクセス・お問い合わせ</h2>
+        <p>ショッピングセンターが徒歩圏内。敷地内に銀行ATM、内科・薬局もあります。</p>
+      </div>
+      <dl>
+        <dt>所在地</dt><dd>〒471-0046<br>愛知県豊田市本新町7丁目48番地6</dd>
+        <dt>最寄り駅</dt><dd>愛環 新豊田駅・名鉄 豊田市駅から約4km</dd>
+        <dt>FAX</dt><dd>0565-36-3002</dd>
+      </dl>
+      <ul class="tel-list">
+        <li><span class="dept">代表・有料老人ホーム</span><a href="tel:0565363000">0565-36-3000</a></li>
+        <li><span class="dept">デイサービスセンター</span><a href="tel:0565363008">0565-36-3008</a></li>
+        <li><span class="dept">地域包括支援センター</span><a href="tel:0565363006">0565-36-3006</a></li>
+      </ul>
+      <a class="btn btn-primary" href="contact.html">{{icon:mail}}メールでのお問い合わせ</a>
+    </div>
+    <div class="map">
+      <iframe src="https://maps.google.com/maps?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E7%94%B0%E5%B8%82%E6%9C%AC%E6%96%B0%E7%94%BA7%E4%B8%81%E7%9B%AE48-6&amp;z=15&amp;output=embed" title="豊田ほっとかんの地図" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>

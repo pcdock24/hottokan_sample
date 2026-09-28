@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Klee+One:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="{{BODY_CLASS}}">
+<a class="skip-link" href="#main">本文へスキップ</a>
+
+<!-- ===== サイドレール（WP：header.php。メニューは wp_nav_menu、現在ページは current-menu-item で判定） ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="site-logo" href="index.html">
+      <span class="logo-mark"><img src="assets/img/logo_pc.png" alt="" width="44" height="60"></span>
+      <span class="logo-text">
+        <span class="logo-main">豊田ほっとかん</span>
+        <span class="logo-sub">介護付有料老人ホーム・温浴施設・コミュニティセンター</span>
+      </span>
+    </a>
+
+    <nav class="gnav" id="gnav" aria-label="メインメニュー">
+      <ul>
+        <li class="has-sub">
+          <button type="button" aria-expanded="false">ほっとかんとは{{icon:caret}}</button>
+          <ul class="sub">
+            <li><a href="about.html#overview">施設概要</a></li>
+            <li><a href="about.html#greeting">社長あいさつ</a></li>
+            <li><a href="about.html#company">会社概要</a></li>
+            <li><a href="about.html#koukoku">決算公告</a></li>
+          </ul>
+        </li>
+        <li class="has-sub">
+          <button type="button" aria-expanded="false">施設・サービス{{icon:caret}}</button>
+          <ul class="sub">
+            <li><span class="sub-label">介護・住まい</span></li>
+            <li><a href="nursing-home.html">介護付有料老人ホーム</a></li>
+            <li><a href="day-service.html">デイサービス</a></li>
+            <li><a href="care-consultation.html">介護のご相談（地域包括・居宅介護）</a></li>
+            <li><span class="sub-label">健康・地域</span></li>
+            <li><a href="juwajuwa.html">温浴施設じゅわじゅわ</a></li>
+            <li><a href="community-center.html">西部コミュニティセンター</a></li>
+            <li><a href="nursery.html">どんぐり保育室</a></li>
+            <li><a href="clinic.html">ふじしま内科・あおい調剤薬局</a></li>
+          </ul>
+        </li>
+        <li><a href="news.html">お知らせ</a></li>
+        <li><a href="recruit.html">求人情報</a></li>
+        <li><a href="faq.html">よくあるご質問</a></li>
+        <li><a href="index.html#access">アクセス</a></li>
+      </ul>
+      <div class="gnav-extra">
+        <a class="btn btn-accent" href="tel:0565363000">{{icon:tel}}0565-36-3000（代表）</a>
+        <a class="btn btn-outline-light" href="contact.html">{{icon:mail}}お問い合わせ</a>
+      </div>
+    </nav>
+
+    <div class="header-tools">
+      <p class="header-tel-label">代表電話（受付 9:00〜17:00）</p>
+      <a class="header-tel" href="tel:0565363000" aria-label="代表電話 0565-36-3000（受付 9:00〜17:00）">{{icon:tel}}<span class="num">0565-36-3000</span></a>
+      <a class="btn btn-accent header-contact" href="contact.html">{{icon:mail}}お問い合わせ</a>
+    </div>
+
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="gnav">
+      <span class="bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span>メニュー</span>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
